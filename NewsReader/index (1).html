@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Reader</title>
+    <link rel="stylesheet" href="styles (1).css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script>
+        function loadPage(url) {
+            var embed = document.getElementById("embeddedPage");
+            embed.setAttribute("src", url);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="col d-flex justify-content-center">
+                <a class="navbar-brand" href=":///C:/Users/LENOVO/Downloads/index%20(1).html?#">News Readers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col d-flex justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://globalnews.ca/');">World</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://www.theindiaforum.in/politics');">Political</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://www.business-standard.com/');">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://vigyanprasar.gov.in/isw/isw.htm');">Science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://indiatechnologynews.in/');">Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://www.dnaindia.com/entertainment');">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="loadPage('https://www.wionews.com/sports');">Sports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <embed id="embeddedPage" type="text/html" src="" width="100%" height="350"-->
+
+    <main>
+    <div style="display: flex;">
+        <section class="top-stories" style="flex: 1;">
+            <div class="container">
+                <h1 class="highlight">FEATURED HEADLINES</h1>>
+                <ol id="news-list"></ol>
+            </div>
+        </section>
+
+        <section class="widget" style="flex: 1;">
+            <div class="container">
+                <h1 class="highlight">BREAKING NEWS</h1>
+                <div id="rss-feeds">
+                <script type="text/javascript">
+                    rssfeed_url = new Array(); 
+                    rssfeed_url[0] = "https://news.abplive.com/home/feed/"; 
+                    rssfeed_url[1] = "https://feeds.feedburner.com/ndtvprofit-latest"; 
+                    rssfeed_url[2] = "https://www.news18.com/rss/india.xml"; 
+                    rssfeed_url[3] = "https://www.hindustantimes.com/feeds/rss/top-news/rssfeed.xml"; 
+                    rssfeed_url[4] = "https://feeds.feedburner.com/ndtvnews-indians-abroad";  
+                    rssfeed_frame_width = "499";
+                    rssfeed_frame_height = "1055"; 
+                    rssfeed_scroll = "on"; 
+                    rssfeed_scroll_step = "3"; 
+                    rssfeed_scroll_bar = "off"; 
+                    rssfeed_target = "_blank"; 
+                    rssfeed_font_size = "14"; 
+                    rssfeed_font_face = "verdana"; 
+                    rssfeed_border = "off"; 
+                    rssfeed_css_url = ""; 
+                    rssfeed_title = "off"; 
+                    rssfeed_title_name = "feedeer"; 
+                    rssfeed_title_bgcolor = ""; 
+                    rssfeed_title_color = ""; 
+                    rssfeed_title_bgimage = ""; 
+                    rssfeed_footer = "off"; 
+                    rssfeed_footer_name = "rss feed widget"; 
+                    rssfeed_footer_bgcolor = ""; 
+                    rssfeed_footer_color = "#ff6699"; 
+                    rssfeed_footer_bgimage = ""; 
+                    rssfeed_item_title_length = "100"; 
+                    rssfeed_item_title_color = "#000"; 
+                    rssfeed_item_bgcolor = ""; 
+                    rssfeed_item_bgimage = "";
+                    rssfeed_item_border_bottom = "on"; 
+                    rssfeed_item_source_icon = "on"; 
+                    rssfeed_item_date = "on"; 
+                    rssfeed_item_description = "on"; 
+                    rssfeed_item_description_length = "40"; 
+                    rssfeed_item_description_color = "#000"; 
+                    rssfeed_item_description_link_color = "#99cc00"; 
+                    rssfeed_item_description_tag = "off"; 
+                    rssfeed_no_items = "30"; 
+                    rssfeed_cache = "fe5bf539b638d6772cd9a3324992b21f"; 
+                </script> 
+                <script type="text/javascript" src="https://feed.surfing-waves.com/js/rss-feed.js"></script> 
+                <div style="color:#085ef1;font-size:15px; text-align:right" >Powered By: <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ff0303;">Waves</a></div> 
+                </div>
+        </section>
+    </div>
+</main>
+    </body>
+
+    <footer>
+        <div class="footer-box">
+            <p>&copy; 2023 News Reader</p>
+        </div>
+    </footer>
+
+    <script src="scripts (1).js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"; crossorigin="anonymous"</script>
+</html>
